@@ -16,7 +16,7 @@ body {
     color:white;
     /*background-color: var(--banner-color);*/
     margin: 0;
-    /*background-color: var(--accent-color);*/
+    background-color: black;
     font-family: Arial;
 }
 h1{
