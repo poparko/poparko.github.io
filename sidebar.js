@@ -11,7 +11,7 @@ const backgrounds = [
   'url("images/bg3.jpg")',
   'url("images/bbg4.jpg")'
 ];
-var currentSection = -1; // tracks which section is active
+var currentSection = -1; 
 let isScrolling;
 
 //Start
@@ -26,12 +26,17 @@ sections.forEach((section, index) => {
     }
 });
 
+backgrounds.forEach(src => {
+  const img = new Image();
+  img.src = src; 
+});
+
 //On click behaviour
 buttons.forEach((btn, index) => {
     btn.addEventListener('mousedown', () => {
         sections[index].scrollIntoView({ behavior: 'smooth' });
-        buttons.forEach(b => b.classList.remove('active')); // changed variable name
-        btn.classList.add('active'); // reference the clicked button
+        buttons.forEach(b => b.classList.remove('active')); 
+        btn.classList.add('active');
     });
 });
 
