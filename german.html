@@ -1,0 +1,144 @@
+﻿<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="foreground"></div>
+    <div class="foreground-next"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="banner-sides">
+            <div class="flag-container"><a href="index.html"><img src="images/en-flag.png"></a></div>
+        </div>
+        <button class="slant-btn"><span>Fahrsimulator</span></button>
+        <button class="slant-btn"><span>Büro Spiel<br>Prototyp</span></button>
+        <button class="slant-btn"><span>Diese<br/>Webseite</span></button>
+        <button class="slant-btn"><span>Unverwandte Designprojekte</span></button>
+    </div>
+
+    <div class="content">
+        <div id="section1" class="section">
+            <h2>FAHRSIMULATOR</h2>
+            <h3>RWTH ISAC</h3>
+            <h3>2022-2025</h3>
+            <p>
+            Das ist der Anfang meiner professionellen Programmiererfahrung,
+            bei der ich komplexe Herausforderungen meistern musste, um die Anforderungen der Forschenden zu erfüllen,
+            die die Studien für den Simulator konzipiert haben.
+            </p>
+            <p>
+            Meine erste Aufgabe bestand darin, die Dynamik der Verkehrsfahrzeuge zu verbessern und ihr Verhalten physikalisch genauer zu gestalten. 
+            Außerdem habe ich die Fahrzeug-Rendering-Logik optimiert,
+            wodurch die Leistung deutlich gesteigert wurde, indem die Darstellung der relevantesten Fahrzeuge unter Hunderten simulierten Fahrzeugen priorisiert wurde. 
+            Später habe ich einen Bluetooth-Herzfrequenzsensor integriert, der Daten zusammen mit zahlreichen Verhaltensmetriken der Studienteilnehmenden in einer Datenbank protokolliert.
+            Zusätzlich war ich für die Implementierung der Szenariologik der beiden aktuellsten Simulator-Studien verantwortlich — die erste wurde im Oktober 2025 veröffentlicht.
+            </br><a href="https://www.sciencedirect.com/science/article/pii/S0001457525002854"><mark>(Link zur Studie in ScienceDirect.com)</mark></a>
+            </p>
+            <p>
+            Zu meinen kleineren Beiträgen gehörten die Modellierung von Fahrzeugen lokaler Behörden, die Gestaltung eines neuen animierten Tachometer-Displays 
+            für den Simulator sowie das Rendern kurzer Videoclips für Online-Formulare.
+            </p>
+            <p>
+            In letzter Zeit habe ich einen Arduino-basierten Prototypen für einen neuen E-Scooter-Simulator entwickelt,
+            der physische Sensordaten über eine serielle Verbindung an Unity überträgt.
+            </p>
+            <p>
+            Abschließend habe ich einen kurzen Trailer für den Simulator vorbereitet, der den physischen Aufbau zeigt und eine Auswahl 
+            unterhaltsamer Clips präsentiert, die ich im Laufe der Jahre erstellt habe.
+            </p>
+            <h4>Fahrsimulator Trailer </h4>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/mvoV17ooVRc?si=Eqf88PpRZMr3eTJE&showinfo=0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+        <div id="section2" class="section">
+            <h2>BÜRO SPIEL PROTOTYP</h2>
+            <h3>2025-2026?</h3>
+            <p>
+            Dies ist das neueste Spiel, das ich zu prototypisieren begonnen habe, und das erste, das ich tatsächlich beabsichtige fertigzustellen.
+            Obwohl es auf den ersten Blick unscheinbar wirkt, gibt es viele unterhaltsame Features und zahlreiche Zeilen Code, die im Hintergrund arbeiten, 
+            um alles reibungslos laufen zu lassen.
+            </p>
+            <p>
+            Anfangs wollte ich unbedingt einen Schreibtisch darstellen, der mit Papierstapeln bedeckt ist. Nach etwa hundert Blättern sank jedoch die Performance deutlich.
+            Um das Problem zu lösen, habe ich Container-Modelle erstellt, die das Gefühl eines riesigen Papierstapels vermitteln, ohne die Leistung zu beeinträchtigen.
+            Derzeit gibt es sieben Containergrößen, und das Spiel wählt dynamisch aus, welche verwendet werden,
+            um die Anzahl der Objekte zu minimieren — ähnlich wie ein Kassierer, der das passende Wechselgeld auswählt.
+            </p>
+            <div class="section-horizontal"><img src="images/stack.webp"/></div>
+            <p>
+            Das Spiel kann außerdem ein zufällig generiertes Raster beliebiger Größe erzeugen. Abhängig vom Schwierigkeitsgrad können bestimmte Bereiche des Rasters Anforderungen enthalten,
+            die der Spieler ausfüllen muss. Diese Zonen prüfen beim Generieren Kollisionen mit den Rändern, um Überlappungen im endgültigen Layout zu verhindern.
+            </p>
+            <div class="section-horizontal"><img src="images/lattice.webp"/></div>
+            <p>
+            Kein Büro ist vollständig ohne ein wenig Ablenkung, daher habe ich einen prozeduralen Social-Media-Generator hinzugefügt.
+            Dieser ist locker an Plattformen wie Instagram oder TikTok angelehnt und erlaubt unendliches Scrollen, was benutzerdefinierten Code erfordert, um das typische,
+            sanft verankerte Scrollgefühl zu erzielen. Die angezeigten Inhalte werden zufällig erzeugt, basierend auf verschiedenen Satzvorlagen und Wortlisten,
+            um halbwegs kohärente Memes zu erstellen (die sogar besser als einige Memes von 2025 sind).
+            </p>
+            <div class="section-horizontal"><img src="images/mems.webp"/></div>
+            <p>
+            Abschließend gibt es noch einige bedeutungslose Interaktionen, um das Erlebnis abzurunden. Als ich mir die verschachtelte Struktur meiner Szene ansah,
+            erinnerte sie mich an die sechs Drehachsen eines Zauberwürfels, also wollte ich sehen, ob ich dieses legendäre Spielzeug mithilfe der Parent-Child-Beziehungen
+            nachbilden kann. Code-seitig ist nichts allzu Komplexes beteiligt, aber es macht Spaß, darauf zu klicken.
+            </p>
+            <div class="section-horizontal"><img src="images/cube.gif"/></div>
+        </div>
+
+
+        <div id="section3" class="section">
+            <h2>DIESE WEBSEITE</h2>
+            <p>
+            Ich wollte meine Expertise erweitern und mich mit etwas Neuem herausfordern, also habe ich diese kleine Seite innerhalb weniger Tage mit drei Zielen erstellt:
+            </p>
+            <ol>
+                <li>Meine Projekte präsentieren</li>
+                <li>Eine dynamische und ansprechende Website erstellen</li>
+                <li>Zeigen, dass ich mich in jede Programmiersprache einarbeiten kann</li>
+            </ol>
+            <p>
+            Die Seite wurde mit HTML, CSS und JavaScript umgesetzt. Sie beinhaltet einige komplexere Funktionen, wie das dynamische Hervorheben des aktiven Navigationsbuttons und das
+            Ändern des Hintergrunds abhängig davon, wie weit der Leser gescrollt hat. Außerdem habe ich darauf geachtet, dass die Seite weitgehend unempfindlich gegenüber 
+            Skalierungsproblemen beim Ändern der Fenstergröße ist, sodass sie auf allen gängigen Bildschirmgrößen gut funktioniert.
+            </p>
+            <div class="section-horizontal"><img width="60%" src="images/site2.jpg"/></div>
+            <h4>26:9 Aspect Ratio</h4>
+
+        </div>
+        <div id="section4" class="section">
+            <h2>UNVERWANDTE DESIGNPROJEKTE</h2>
+            <p>
+            Ich habe auch andere Projekte, die nicht direkt mit Programmierung zu tun haben, die aber in stärker designorientierten Positionen nützlich sein könnten, daher habe ich sie am Ende aufgeführt.
+            Ich betreibe seit über zehn Jahren digitale Kunst, vor allem Malerei, von der die besten Werke auf meiner
+            <a href="https://poparko.artstation.com/"><mark>ArtStation</mark></a>
+            hochgeladen sind. Außerdem habe ich ein Labortour-Video für ein anderes Institut der RWTH produziert sowie eine kurze edukative Animation über Arbeitsverträge.
+            </p>
+            <h4>Arbeitsverträge Animation (Nur auf Bulgarisch verfügbar)</h4>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ACOPNdwO0Yc?si=77ZNATggoHGqCEaS" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            </br>
+            <h4>IWE1 Virtual Micro-Nano Labor Trailer </h4>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/6MsKJyk0uMk?si=-H__sN01Qfi9nFkQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+ <script src="sidebar.js"></script>
+</body>
+</html>

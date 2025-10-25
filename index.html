@@ -1,8 +1,144 @@
-<html>
+﻿<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <div class="foreground"></div>
+    <div class="foreground-next"></div>
+    <div class="background"></div>
+    <div class="sidebar">
+        <div class="banner-sides">
+            <div class="flag-container"><a href="german.html"><img src="images/de-flag.png"></a></div>
+        </div>
+        <button class="slant-btn"><span>Driving Simulator</span></button>
+        <button class="slant-btn"><span>Office Game<br>Prototype</span></button>
+        <button class="slant-btn"><span>This<br/>Website</span></button>
+        <button class="slant-btn"><span>Unrelated Design<br/>Projects</span></button>
+    </div>
 
-<h1>Test Big</h1>
-<p>Test smol.</p>
+    <div class="content">
+        <div id="section1" class="section">
+            <h2>DRIVING SIMULATOR</h2>
+            <h3>RWTH ISAC</h3>
+            <h3>2022-2025</h3>
+            <p>
+            This is the beginning of my professional coding experience and I've had to tackle some serious problems to meet the requirements of
+            the researchers, who conceptualized the studies for the simulator. 
+            </p>
+            <p>
+            My first task was to improve the dynamics of traffic vehicles, making their behaviour 
+            more physically accurate. I also optimized the vehicle rendering logic, significantly
+            boosting performance by prioritizing the display of the most relevant cars among hundreds of simulated ones. 
+            Later, I integrated a Bluetooth heart-rate sensor that logs data to a database alongside numerous behavioural metrics from study participants.
+            I was also responsible for implementing scenario logic for the two most recent simulator studies — the first of which was published in October 2025.
+            </br><a href="https://www.sciencedirect.com/science/article/pii/S0001457525002854"><mark>(Link to study in ScienceDirect.com)</mark></a>
+            </p>
+            <p>
+            Some of my smaller contributions included modelling local department vehicles, designing a new animated 
+            tachometer graphic for the simulator, and rendering short video clips for online forms.
+            </p>
+            <p>
+            Most recently, I’ve been developing an Arduino-based prototype
+            for a new e-scooter simulator, transmitting physical sensor data via serial connection to Unity.
+            </p>
+            <p>
+            Finally, I have prepared a short trailer for the simulator showcasing the physical setup and a selection of entertaining clips I have made over the years.
+            </p>
+            <h4>Driving Simulator Trailer </h4>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/mvoV17ooVRc?si=Eqf88PpRZMr3eTJE&showinfo=0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen></iframe>
+            </div>
+        </div>
 
+
+        <div id="section2" class="section">
+            <h2>OFFICE GAME PROTOTYPE</h2>
+            <h3>2025-2026?</h3>
+            <p>
+            This is the latest game I've started prototyping and is the first one I actually intend on finishing.
+            While seemingly mundane at first there are a lot of fun features and many lines of code working behind the scenes to make everything run smoothly.
+            </p>
+            <p>
+            Initially I knew I wanted to have a desk, covered with stacks of paper, but after around a hundred sheets,
+            the performance started to drop significantly. To fix that, I created container models that convey the feeling of giant paper stack without the performance hit.
+            At the moment there are seven container sizes and the game dynamically chooses which ones to use to minimize the object count, 
+            similar to a shop clerk choosing the right coins to give as change.
+            </p>
+            <div class="section-horizontal"><img src="images/stack.webp"/></div>
+            <p>
+            The game can also generate a randomized grid of any size. Depending on the difficulty a certain
+            percentage of the grid can include requirement zones for the player to fill in. These zones check for edge collisions when generating
+            to prevent overlap in the final layout.
+            </p>
+            <div class="section-horizontal"><img src="images/lattice.webp"/></div>
+            <p>
+            No office is complete without a bit of procrastination, so to replicate that experience, I added
+            a procedural social media generator. It is loosely modeled after platforms such as Instagram or TikTok and allows for infinite scrolling,
+            requiring custom code to get the smooth anchored-scrolling feel, which is iconic for the platforms. The displayed content is randomized,
+            pulling from different sentence templates and word lists to create semi-coherent memes (which are arguably
+            better than some 2025 memes).
+            </p>
+            <div class="section-horizontal"><img src="images/mems.webp"/></div>
+            <p>
+            Finally there are some meaningless interactables to round out the experience. When I looked at the nested structure of my scene,
+            it reminded me of the six pivots of a Rubik's Cube, so I wanted to see if I could 
+            recreate this legendary toy using said parent-child relationships. There’s nothing too complex code-wise, but it’s something fun to click.
+            </p>
+            <div class="section-horizontal"><img src="images/cube.gif"/></div>
+        </div>
+
+
+        <div id="section3" class="section">
+            <h2>THIS WEBSITE</h2>
+            <p>
+            I wanted to expand my expertise and challenge myself with something new, so I built this small page over a couple of days with three goals in mind:
+            </p>
+            <ol>
+                <li>Showcase my projects</li>
+                <li>Create a dynamic and polished site</li>
+                <li>Prove I can adapt to any coding language</li>
+            </ol>
+            <p>
+            This page is built with HTML, CSS, and JavaScript. It includes a few more complex features, 
+            such as dynamically highlighting the active navigation button and changing the background as the reader scrolls. 
+            I also worked to make it largely immune to scaling issues when resizing the window, ensuring it functions well across all reasonable aspect ratios.
+            </p>
+            <div class="section-horizontal"><img width="60%" src="images/site2.jpg"/></div>
+            <h4>26:9 Aspect Ratio</h4>
+
+        </div>
+        <div id="section4" class="section">
+            <h2>UNRELATED DESIGN PROJECTS</h2>
+            <p>
+            I have other projects, which aren't related to coding, but might prove useful in more design-oriented positions so I have included them at the end.
+            I have been doing digital art for over 10 years now, mostly paintings, the best of which are uploaded to my 
+            <a href="https://poparko.artstation.com/"><mark>ArtStation</mark></a>
+            page. I have also produced a lab tour video
+            for another RWTH institute and a short educational animation about work contracts.
+            </p>
+            <h4>Educational Contract Animation (Available Only in Bulgarian)</h4>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ACOPNdwO0Yc?si=77ZNATggoHGqCEaS" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            </br>
+            <h4>IWE1 Virtual Micro-Nano Lab Trailer </h4>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/6MsKJyk0uMk?si=-H__sN01Qfi9nFkQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+ <script src="sidebar.js"></script>
 </body>
 </html>
