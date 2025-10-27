@@ -77,10 +77,11 @@ mark {
     height:100vh;
     transition: opacity 0.4s ease;
     z-index: 1002; 
-    background-size: cover;       /* scale to cover container */
-    background-position: center;  /* center the image */
-    background-repeat: no-repeat; /* don’t tile */
-    background-attachment: fixed; /* keeps background static when scrolling */
+    background-size: cover; 
+    background-color: black;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 .foreground-next {
     position: fixed; 
@@ -90,10 +91,11 @@ mark {
     height:100vh;
     opacity: 0;
     z-index: 1001; 
-    background-size: cover;       /* scale to cover container */
-    background-position: center;  /* center the image */
-    background-repeat: no-repeat; /* don’t tile */
-    background-attachment: fixed; /* keeps background static when scrolling */
+    background-size: cover;  
+    background-color: black;
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 .banner {
     position: fixed; 
@@ -132,11 +134,11 @@ mark {
     transition: transform 0.3s;
 }
 .sidebar {
-   position: fixed; /* stays in place when scrolling */
+   position: fixed; 
    left: 0;
    top: 0;
    width: 16vw;
-   height: 100vh; /* full viewport height */
+   height: 100vh;
    padding-top: 0vh;
    background-color: var(--banner-color);
     color: white;
@@ -160,7 +162,7 @@ mark {
     background-image: var(--banner-color));
     border: none;
     cursor: pointer;
-    transform: skewY(10deg); /* slants the rectangle */
+    transform: skewY(10deg); 
     border-radius: 3vh;
     display: flex;
     align-items: center;
@@ -184,7 +186,7 @@ mark {
     height: 45vh;
     }
 .slant-btn.active span {
-   /*  transform: skewY(-20deg); counter skew for readable text */
+   /*  transform: skewY(-20deg); */
     color: black;
     font-weight: bold;
     user-select: none;

@@ -29,6 +29,7 @@ sections.forEach((section, index) => {
 backgrounds.forEach(src => {
   const img = new Image();
   img.src = src; 
+  console.log("img load");
 });
 
 //On click behaviour
